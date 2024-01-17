@@ -11,30 +11,29 @@ const intFav = 28;
 let answer2 = window.prompt("Tell me a number?");
 
 if (answer2 > intFav) {console.log("Too high!")}
-else if (answer2 < intFav) {console.log("Too low")}
+else if (answer2 < intFav) {console.log("Too low!")}
 else {console.log("You got it! Congratulations!!")}
-
 
 //Ex2
 
 let answer3 = window.prompt("What is your birth month?");
 
-switch (answer3) {
-  case "March":
-  case "April":
-  case "May":       console.log("Spring");
+switch (answer3.toLowerCase()) {
+  case "march":
+  case "april":
+  case "may":       console.log("Spring");
                     break;
-  case "June":
-  case "July":      
-  case "August":    console.log("Summer");
+  case "june":
+  case "july":      
+  case "august":    console.log("Summer");
                     break;
-  case "September":
-  case "October":   
-  case "November":  console.log("Fall");
+  case "september":
+  case "october":   
+  case "november":  console.log("Fall");
                     break;
-  case "December":
-  case "January":
-  case "February":  console.log("Winter");
+  case "december":
+  case "january":
+  case "february":  console.log("Winter");
                     break;
   default: console.log("Try again");
           
@@ -85,5 +84,3 @@ switch (sizeId) {
   default: size = "One size fits all";
 }
   console.log(type, color, size);
-
-
